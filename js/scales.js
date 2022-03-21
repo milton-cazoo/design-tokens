@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 21 Mar 2022 15:23:17 GMT
+ * Generated on Mon, 21 Mar 2022 15:24:06 GMT
  */
 
 export const orange100 = "#ffce85";
