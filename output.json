@@ -1,0 +1,76 @@
+{
+  "aliases": {
+    "primary": {
+      "main": {
+        "value": "#FF9900",
+        "type": "color"
+      },
+      "light": {
+        "value": "#ffce85",
+        "type": "color"
+      },
+      "dark": {
+        "value": "#c78523",
+        "type": "color"
+      }
+    },
+    "secondary": {
+      "light": {
+        "value": "#a4d1ea",
+        "type": "color"
+      },
+      "main": {
+        "value": "#2d91c9",
+        "type": "color"
+      },
+      "dark": {
+        "value": "#1a5475",
+        "type": "color"
+      }
+    }
+  },
+  "scales": {
+    "orange": {
+      "100": {
+        "value": "#ffce85",
+        "type": "color"
+      },
+      "500": {
+        "value": "#FF9900",
+        "type": "color"
+      },
+      "900": {
+        "value": "#c78523",
+        "type": "color"
+      }
+    },
+    "blue": {
+      "100": {
+        "value": "#a4d1ea",
+        "type": "color"
+      },
+      "500": {
+        "value": "#2d91c9",
+        "type": "color"
+      },
+      "900": {
+        "value": "#1a5475",
+        "type": "color"
+      }
+    },
+    "pink": {
+      "100": {
+        "value": "#e0a3ea",
+        "type": "color"
+      },
+      "500": {
+        "value": "#b32dc9",
+        "type": "color"
+      },
+      "900": {
+        "value": "#681a75",
+        "type": "color"
+      }
+    }
+  }
+}
