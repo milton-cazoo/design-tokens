@@ -2,7 +2,7 @@
   "aliases": {
     "primary": {
       "main": {
-        "value": "#f69400",
+        "value": "#f4970a",
         "type": "color"
       },
       "light": {
@@ -36,7 +36,7 @@
         "type": "color"
       },
       "500": {
-        "value": "#f69400",
+        "value": "#f4970a",
         "type": "color"
       },
       "900": {

@@ -1,0 +1,22 @@
+/**
+ * Do not edit directly
+ * Generated on Mon, 21 Mar 2022 10:57:32 GMT
+ */
+
+:root {
+  --aliases-primary-main: #f4970a;
+  --aliases-primary-light: #ffce85;
+  --aliases-primary-dark: #c78523;
+  --aliases-secondary-light: #a4d1ea;
+  --aliases-secondary-main: #2d91c9;
+  --aliases-secondary-dark: #1a5475;
+  --scales-orange-100: #ffce85;
+  --scales-orange-500: #f4970a;
+  --scales-orange-900: #c78523;
+  --scales-blue-100: #a4d1ea;
+  --scales-blue-500: #2d91c9;
+  --scales-blue-900: #1a5475;
+  --scales-pink-100: #e0a3ea;
+  --scales-pink-500: #b32dc9;
+  --scales-pink-900: #681a75;
+}
