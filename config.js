@@ -1,33 +1,36 @@
 const StyleDictionary = require("style-dictionary");
-const tokens = require("./data/tokens.json");
 const { formatHelpers } = StyleDictionary;
 
 const tokenFilter = (cat) => (token) => token.attributes.category === cat;
 
-const transformToCammelCase = (name) =>
-  name.reduce((acc, str, index) => {
+const transformPathToCammelCase = (path) =>
+  path.reduce((acc, str, index) => {
     const _str = index === 0 ? str : str.charAt(0).toUpperCase() + str.slice(1);
     return acc.concat(_str);
   }, "");
 
+const mapTokensToObject = (dictionary) =>
+  "{\n" +
+  dictionary.allTokens
+    .map(function (token) {
+      // Use the path of the token to create the variable name, skip the first item
+      const [, ..._path] = token.path;
+      const name = transformPathToCammelCase(_path);
+      return `  ${name}: ${JSON.stringify(token.value)},`;
+    })
+    .join("\n") +
+  "\n};";
+
 module.exports = {
   source: ["output.json"],
   format: {
-    "javascript/cammel-case": (opts) => {
-      const { dictionary, file } = opts;
-      let output = formatHelpers.fileHeader(file);
-
-      dictionary.allTokens.forEach((token) => {
-        const { path, original } = token;
-
-        // Use the path of the token to create the variable name, skip the first item
-        const [, ..._path] = path;
-        const name = transformToCammelCase(_path);
-
-        output += `export const ${name} = \"${original.value}\";\n`;
-      });
-
-      return output;
+    "javascript/export-default": function ({ dictionary, file }) {
+      return (
+        formatHelpers.fileHeader({ file }) +
+        "export default " +
+        mapTokensToObject(dictionary) +
+        "\n"
+      );
     },
   },
   platforms: {
@@ -48,12 +51,12 @@ module.exports = {
         {
           filter: tokenFilter("scales"),
           destination: "scales.js",
-          format: "javascript/cammel-case",
+          format: "javascript/export-default",
         },
         {
           filter: tokenFilter("aliases"),
           destination: "aliases.js",
-          format: "javascript/cammel-case",
+          format: "javascript/export-default",
         },
       ],
     },
