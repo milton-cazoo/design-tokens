@@ -6,7 +6,7 @@
         "type": "color"
       },
       "light": {
-        "value": "#ffce85",
+        "value": "#ffd99f",
         "type": "color"
       },
       "dark": {
@@ -32,7 +32,7 @@
   "scales": {
     "orange": {
       "100": {
-        "value": "#ffce85",
+        "value": "#ffd99f",
         "type": "color"
       },
       "500": {
