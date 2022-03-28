@@ -1,2 +1,2 @@
-export * from "./aliases";
-export * from "./scales";
+export * as aliases from "./aliases";
+export * as scales from "./scales";
