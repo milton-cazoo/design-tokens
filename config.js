@@ -46,7 +46,7 @@ module.exports = {
     },
     js: {
       transformGroup: "js",
-      buildPath: "js/",
+      buildPath: "packages/design-tokens/",
       files: [
         {
           filter: tokenFilter("scales"),
