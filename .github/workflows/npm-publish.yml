@@ -22,6 +22,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm publish --access public
-        working-directory: packages/design-tokens
+        working-directory: ./packages/design-tokens
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
