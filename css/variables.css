@@ -1,16 +1,16 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Apr 2022 10:58:16 GMT
+ * Generated on Tue, 05 Apr 2022 11:05:15 GMT
  */
 
 :root {
   --aliases-primary-main: #f4970a;
-  --aliases-primary-light: #e7c38e;
+  --aliases-primary-light: #e7c3ff;
   --aliases-primary-dark: #c78523;
   --aliases-secondary-light: #a4d1ea;
   --aliases-secondary-main: #2d91c9;
   --aliases-secondary-dark: #1a5475;
-  --scales-orange-100: #e7c38e;
+  --scales-orange-100: #e7c3ff;
   --scales-orange-500: #f4970a;
   --scales-orange-900: #c78523;
   --scales-blue-100: #a4d1ea;

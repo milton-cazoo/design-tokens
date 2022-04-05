@@ -1,11 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Apr 2022 10:58:16 GMT
+ * Generated on Tue, 05 Apr 2022 11:05:15 GMT
  */
 
 export default {
   primaryMain: "#f4970a",
-  primaryLight: "#e7c38e",
+  primaryLight: "#e7c3ff",
   primaryDark: "#c78523",
   secondaryLight: "#a4d1ea",
   secondaryMain: "#2d91c9",

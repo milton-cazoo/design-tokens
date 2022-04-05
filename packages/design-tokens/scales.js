@@ -1,10 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Apr 2022 10:58:16 GMT
+ * Generated on Tue, 05 Apr 2022 11:05:15 GMT
  */
 
 export default {
-  orange100: "#e7c38e",
+  orange100: "#e7c3ff",
   orange500: "#f4970a",
   orange900: "#c78523",
   blue100: "#a4d1ea",
