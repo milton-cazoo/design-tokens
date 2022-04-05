@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Apr 2022 12:19:08 GMT
+ * Generated on Tue, 05 Apr 2022 12:20:42 GMT
  */
 
 :root {
@@ -11,6 +11,7 @@
   --aliases-secondary-main: #2d91c9;
   --aliases-secondary-dark: #1a5475;
   --scales-grey-100: #ffffff;
+  --scales-grey-500: #808080;
   --scales-orange-100: #e7c3ff;
   --scales-orange-500: #f4970a;
   --scales-orange-900: #c78523;
