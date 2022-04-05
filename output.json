@@ -30,6 +30,12 @@
     }
   },
   "scales": {
+    "grey": {
+      "100": {
+        "value": "#ffffff",
+        "type": "color"
+      }
+    },
     "orange": {
       "100": {
         "value": "#e7c3ff",
