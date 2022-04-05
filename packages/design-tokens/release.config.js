@@ -1,4 +1,4 @@
 module.exports = {
-  branches: ["main", "add-semantic-release"],
+  branches: ["main"],
   tagFormat: "${version}",
 };
