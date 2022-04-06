@@ -1,11 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Wed, 06 Apr 2022 00:19:59 GMT
+ * Generated on Wed, 06 Apr 2022 00:22:07 GMT
  */
 
 export default {
   grey100: "#ffffff",
   grey500: "#808080",
+  grey900: "#000000",
   orange100: "#e7c3ff",
   orange500: "#f4970a",
   orange900: "#c78523",
