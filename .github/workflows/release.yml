@@ -23,15 +23,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "lts/*"
-      - name: Configure GitHub private npm repository
-        working-directory: packages/design-tokens
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "@cazoo-uk:registry=https://npm.pkg.github.com/">.npmrc
-          echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN">>.npmrc
+          registry-url: https://npm.pkg.github.com/
       - name: Install dependencies
         run: npm ci
       - name: Release
@@ -44,4 +36,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
