@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: "lts/*"
       - name: Configure GitHub private npm repository
+        working-directory: packages/design-tokens
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -40,3 +41,7 @@ jobs:
           working_directory: packages/design-tokens
           extra_plugins: |
             @semantic-release/git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
