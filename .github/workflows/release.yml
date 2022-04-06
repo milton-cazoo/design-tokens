@@ -10,6 +10,10 @@ on:
     types:
       - completed
 
+defaults:
+  run:
+    working-directory: packages/design-tokens
+
 jobs:
   release:
     name: Release
@@ -26,8 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Release
-        working-directory: packages/design-tokens
+        uses: cycjimmy/semantic-release-action@v3
+        with:
+       # You can specify specifying version range for the extra plugins if you prefer.
+          extra_plugins: |
+            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm i @semantic-release/git -g && npx semantic-release
