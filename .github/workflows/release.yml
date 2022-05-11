@@ -4,11 +4,16 @@
 name: release github
 
 # Only trigger, when the build workflow succeeded
+# on:
+#   workflow_run:
+#     workflows: ["CI"]
+#     types:
+#       - completed
+
 on:
-  workflow_run:
-    workflows: ["CI"]
-    types:
-      - completed
+  push:
+    branches:
+      - master
 
 jobs:
   release:
