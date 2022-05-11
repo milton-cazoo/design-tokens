@@ -30,7 +30,7 @@ jobs:
         uses: cycjimmy/semantic-release-action@v3
         with:
           # You can specify specifying version range for the extra plugins if you prefer.
-          # working_directory: packages/design-tokens
+          working_directory: packages/design-tokens
           extra_plugins: |
             @semantic-release/git
         env:
