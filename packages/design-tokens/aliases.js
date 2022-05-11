@@ -11,5 +11,6 @@ export default {
   secondaryMain: "#2d91c9",
   secondaryDark: "#1a5475",
   tertiaryLight: "#FFFFFF",
+  tertiaryMain: "#808080",
   tertiaryDark: "#000000",
 };
