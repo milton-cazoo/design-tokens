@@ -39,6 +39,10 @@
         "value": "#808081",
         "type": "color"
       },
+      "600": {
+        "value": "#606061",
+        "type": "color"
+      },
       "900": {
         "value": "#000000",
         "type": "color"
